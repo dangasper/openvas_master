@@ -38,7 +38,7 @@ do
 done
 
 echo "Starting Openvasmd"
-./openvasmd -a 127.0.0.1 -p 9390 --max-ips-per-target=65536
+./openvasmd -a 0.0.0.0 -p 9390 --max-ips-per-target=65536
 
 echo "Update portmap names..."
 wget http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml
