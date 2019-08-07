@@ -560,7 +560,7 @@ RUN cd /usr/local/src/openvas && \
 RUN mkdir -p /var/run/redis && \
     mkdir -p /usr/local/var/lib/openvas/openvasmd/gnupg && \
     mkdir -p /var/log/openvas && \
-    mkdir -p /openvas
+    mkdir -p /openvas && \
     mkdir -p /usr/local/share/openvas/gsa/locale
 
 COPY --chown=redis:redis config/redis.config /etc/redis/redis.conf
